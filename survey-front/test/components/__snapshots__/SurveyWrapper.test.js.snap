@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SurveyWrapper /> Render correctly 1`] = `
+<Modal
+  centered={false}
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer={true}
+  eventPool="Modal"
+  open={true}
+>
+  <ModalHeader>
+    Profile Survey
+  </ModalHeader>
+  <ModalContent>
+    <StepGroup
+      attached="top"
+      items={
+        Array [
+          Object {
+            "icon": "table",
+            "key": "step1",
+            "title": "Step 1",
+          },
+          Object {
+            "icon": "info",
+            "key": "step2",
+            "title": "Step 2",
+          },
+        ]
+      }
+      widths={2}
+    />
+    <Segment
+      attached={true}
+    />
+  </ModalContent>
+  <ModalActions>
+    <Button
+      as="button"
+      content="Previous"
+      icon="left arrow"
+      labelPosition="left"
+      onClick={[Function]}
+      primary={true}
+    />
+    <Button
+      as="button"
+      content="Next"
+      disabled={false}
+      icon="right arrow"
+      labelPosition="right"
+      onClick={[Function]}
+      primary={true}
+    />
+    <Button
+      as="button"
+      color="green"
+      content="Submit"
+      icon="right arrow"
+      labelPosition="right"
+      onClick={[Function]}
+    />
+  </ModalActions>
+</Modal>
+`;

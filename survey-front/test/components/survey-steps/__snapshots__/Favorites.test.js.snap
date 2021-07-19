@@ -1,0 +1,715 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Favorites /> Should render correctly with inital value 1`] = `
+<Favorites
+  initialData={
+    Object {
+      "book": "",
+      "colors": Array [],
+    }
+  }
+  onDisableNextStep={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          true,
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  onSave={[Function]}
+>
+  <Form
+    as="form"
+  >
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <FormInput
+        as={[Function]}
+        control={[Function]}
+        id="survey-identity-field-favorite-book"
+        label="Favorite Book"
+        name="book"
+        onChange={[Function]}
+        placeholder="Type your favorite book name"
+        required={true}
+        value=""
+      >
+        <FormField
+          control={[Function]}
+          id="survey-identity-field-favorite-book"
+          label="Favorite Book"
+          name="book"
+          onChange={[Function]}
+          placeholder="Type your favorite book name"
+          required={true}
+          value=""
+        >
+          <div
+            className="required field"
+          >
+            <label
+              htmlFor="survey-identity-field-favorite-book"
+            >
+              Favorite Book
+            </label>
+            <Input
+              aria-describedby={null}
+              id="survey-identity-field-favorite-book"
+              name="book"
+              onChange={[Function]}
+              placeholder="Type your favorite book name"
+              required={true}
+              type="text"
+              value=""
+            >
+              <div
+                className="ui input"
+              >
+                <input
+                  aria-describedby={null}
+                  id="survey-identity-field-favorite-book"
+                  name="book"
+                  onChange={[Function]}
+                  placeholder="Type your favorite book name"
+                  required={true}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </Input>
+          </div>
+        </FormField>
+      </FormInput>
+      <FormField
+        required={true}
+      >
+        <div
+          className="required field"
+        >
+          <label>
+            Favorite Colors
+          </label>
+          <FormField
+            key="blue"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Blue"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="blue"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="blue"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="blue"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="blue"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Blue
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Blue
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Blue
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="green"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Green"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="green"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="green"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="green"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="green"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Green
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Green
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Green
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="yellow"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Yellow"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="yellow"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="yellow"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="yellow"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="yellow"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Yellow
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Yellow
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Yellow
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="red"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Red"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="red"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="red"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="red"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="red"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Red
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Red
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Red
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="orange"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Orange"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="orange"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="orange"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="orange"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="orange"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Orange
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Orange
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Orange
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="purple"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Purple"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="purple"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="purple"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="purple"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="purple"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Purple
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Purple
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Purple
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+          <FormField
+            key="gray"
+          >
+            <div
+              className="field"
+            >
+              <Checkbox
+                checked={false}
+                label="Gray"
+                name="colors"
+                onChange={[Function]}
+                type="checkbox"
+                value="gray"
+              >
+                <div
+                  className="ui checkbox"
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseUp={[Function]}
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <input
+                          class="hidden"
+                          name="colors"
+                          readonly=""
+                          tabindex="0"
+                          type="checkbox"
+                          value="gray"
+                        />,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <input
+                            class="hidden"
+                            name="colors"
+                            readonly=""
+                            tabindex="0"
+                            type="checkbox"
+                            value="gray"
+                          />,
+                        }
+                      }
+                    >
+                      <input
+                        checked={false}
+                        className="hidden"
+                        name="colors"
+                        readOnly={true}
+                        tabIndex={0}
+                        type="checkbox"
+                        value="gray"
+                      />
+                    </RefFindNode>
+                  </Ref>
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <label>
+                          Gray
+                        </label>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <label>
+                            Gray
+                          </label>,
+                        }
+                      }
+                    >
+                      <label>
+                        Gray
+                      </label>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </Checkbox>
+            </div>
+          </FormField>
+        </div>
+      </FormField>
+    </form>
+  </Form>
+</Favorites>
+`;

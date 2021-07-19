@@ -6,10 +6,10 @@ import { debounce, isEmpty } from 'lodash';
 import colorsList from '../../config/colorsList';
 
 const onSaveWithDebounce = debounce((data, onSave, onDisableNextStep) => {
-    onSave('favorites', data);
-    
     const disable = Object.values(data).every(i => !isEmpty(i));
-    return onDisableNextStep(!disable);
+    onDisableNextStep(!disable);
+
+    return onSave('favorites', data);
 }, 300);
 
 const Favorites = ({

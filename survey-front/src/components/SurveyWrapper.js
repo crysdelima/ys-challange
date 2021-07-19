@@ -5,8 +5,6 @@ import { Button, Modal, Step, Segment } from 'semantic-ui-react';
 const SurveyWrapper = ({
     children,
     disableNextStep,
-    hasPrevStep,
-    hasNextStep,
     listWithActiveStep,
     onClickNextStep,
     onClickPrevStep,
@@ -37,7 +35,7 @@ const SurveyWrapper = ({
             </Modal.Content>
 
             <Modal.Actions>
-                {hasPrevStep && (
+                {onClickPrevStep && (
                     <Button
                         content="Previous"
                         icon='left arrow'
@@ -47,7 +45,7 @@ const SurveyWrapper = ({
                     />
                 )}
 
-                {hasNextStep ? (
+                {onClickNextStep && (
                     <Button
                         content="Next"
                         disabled={disableNextStep}
@@ -56,7 +54,9 @@ const SurveyWrapper = ({
                         onClick={onClickNextStep}
                         primary
                     />
-                ) : (
+                )}
+                
+                {onSubmit && (
                     <Button
                         content="Submit"
                         icon='right arrow'
@@ -73,20 +73,19 @@ const SurveyWrapper = ({
 SurveyWrapper.propTypes = {
     children: PropTypes.element,
     disableNextStep: PropTypes.bool.isRequired,
-    hasNextStep: PropTypes.bool,
-    hasPrevStep: PropTypes.bool,
     listWithActiveStep: PropTypes.array,
-    onClickNextStep: PropTypes.func.isRequired,
-    onClickPrevStep: PropTypes.func.isRequired,
-    onSubmit: PropTypes.func.isRequired,
+    onClickNextStep: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
+    onClickPrevStep: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
+    onSubmit: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
     openModal: PropTypes.bool.isRequired,
 };
 
 SurveyWrapper.defaultProps = {
     children: null,
-    hasNextStep: null,
-    hasPrevStep: null,
     listWithActiveStep: [],
+    onClickNextStep: false,
+    onClickPrevStep: false,
+    onSubmit: false,
 }
 
 export default SurveyWrapper;

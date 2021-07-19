@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Identity /> Should render correctly with inital value 1`] = `
+<Identity
+  initialData={
+    Object {
+      "email": "initial@mail.com",
+      "name": "initial name",
+    }
+  }
+  onDisableNextStep={[Function]}
+  onSave={[Function]}
+>
+  <Form
+    as="form"
+  >
+    <form
+      className="ui form"
+      onSubmit={[Function]}
+    >
+      <FormInput
+        as={[Function]}
+        control={[Function]}
+        id="survey-identity-field-name"
+        label="Name"
+        name="name"
+        onChange={[Function]}
+        placeholder="Type your name here"
+        value="initial name"
+      >
+        <FormField
+          control={[Function]}
+          id="survey-identity-field-name"
+          label="Name"
+          name="name"
+          onChange={[Function]}
+          placeholder="Type your name here"
+          value="initial name"
+        >
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="survey-identity-field-name"
+            >
+              Name
+            </label>
+            <Input
+              aria-describedby={null}
+              id="survey-identity-field-name"
+              name="name"
+              onChange={[Function]}
+              placeholder="Type your name here"
+              type="text"
+              value="initial name"
+            >
+              <div
+                className="ui input"
+              >
+                <input
+                  aria-describedby={null}
+                  id="survey-identity-field-name"
+                  name="name"
+                  onChange={[Function]}
+                  placeholder="Type your name here"
+                  type="text"
+                  value="initial name"
+                />
+              </div>
+            </Input>
+          </div>
+        </FormField>
+      </FormInput>
+      <FormInput
+        as={[Function]}
+        control={[Function]}
+        id="survey-identity-field-email"
+        label="Email"
+        name="email"
+        onChange={[Function]}
+        placeholder="Type your email address here"
+        value="initial@mail.com"
+      >
+        <FormField
+          control={[Function]}
+          id="survey-identity-field-email"
+          label="Email"
+          name="email"
+          onChange={[Function]}
+          placeholder="Type your email address here"
+          value="initial@mail.com"
+        >
+          <div
+            className="field"
+          >
+            <label
+              htmlFor="survey-identity-field-email"
+            >
+              Email
+            </label>
+            <Input
+              aria-describedby={null}
+              id="survey-identity-field-email"
+              name="email"
+              onChange={[Function]}
+              placeholder="Type your email address here"
+              type="text"
+              value="initial@mail.com"
+            >
+              <div
+                className="ui input"
+              >
+                <input
+                  aria-describedby={null}
+                  id="survey-identity-field-email"
+                  name="email"
+                  onChange={[Function]}
+                  placeholder="Type your email address here"
+                  type="text"
+                  value="initial@mail.com"
+                />
+              </div>
+            </Input>
+          </div>
+        </FormField>
+      </FormInput>
+    </form>
+  </Form>
+</Identity>
+`;

@@ -129,11 +129,9 @@ const SurveyScreen = ({ initialData }) => {
         <SurveyWrapper
             disableNextStep={disableNextStep}
             listWithActiveStep={listWithActiveStep}
-            hasNextStep={!!nextStepKey}
-            hasPrevStep={!!prevStepKey}
-            onClickPrevStep={() => dispatch(setCurrentStep(prevStepKey))}
-            onClickNextStep={() => dispatch(setCurrentStep(nextStepKey))}
-            onSubmit={onSubmit}
+            onClickPrevStep={!!prevStepKey && (() => dispatch(setCurrentStep(prevStepKey)))}
+            onClickNextStep={!!nextStepKey && (() => dispatch(setCurrentStep(nextStepKey)))}
+            onSubmit={currentStep === surveyStaps[3].key && onSubmit}
             openModal={openModal}
         >
             {surveyContent}

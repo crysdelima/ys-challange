@@ -4,9 +4,10 @@ import { Form } from 'semantic-ui-react';
 import { debounce } from 'lodash';
 
 const onSaveWithDebounce = debounce((data, onSave, onDisableNextStep) => {
-    onSave('details', data)
-    
-    return Object.values(data).every(i => !!i) && onDisableNextStep(false);
+    if (Object.values(data).every(i => !!i)) {
+        onDisableNextStep(false);
+    }
+    return onSave('details', data)
 }, 500);
 
 const ageInterval = Array.from({ length: 100 }, (value, key) => ({
