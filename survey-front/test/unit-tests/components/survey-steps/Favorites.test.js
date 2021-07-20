@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Favorites from '../../../src/components/survey-steps/Favorites';
+import Favorites from '../../../../src/components/survey-steps/Favorites';
 
 describe('<Favorites />', () => {
     test('Should render correctly with inital value', () => {

@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import SurveyWrapper from '../../src/components/SurveyWrapper';
+import SurveyWrapper from '../../../src/components/SurveyWrapper';
 import toJson from 'enzyme-to-json';
 
 const steps = [{

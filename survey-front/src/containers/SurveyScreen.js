@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { isEmpty } from 'lodash';
 
 import { setCurrentStep } from '../redux/stepsSlice';
 import {
@@ -28,7 +29,7 @@ const setInitialStep = dispatch => {
 };
 
 const setSurveyInitialData = (dispatch, initialData) => {
-    if (initialData) {
+    if (!isEmpty(initialData)) {
         return Object.keys(initialData).forEach(step => {
             dispatch(updateFormData({
                 step,
@@ -45,7 +46,7 @@ const SurveyScreen = ({ initialData }) => {
         state.survey.formData,
     ]));
     const dispatch = useDispatch();
-
+    
     const [nextStepKey, setNextStepKey] = useState(null);
     const [prevStepKey, setPrevStepKey] = useState(null);
     const [listWithActiveStep, setListWithActiveStep] = useState([]);
@@ -53,24 +54,22 @@ const SurveyScreen = ({ initialData }) => {
     const [openModal, setOpenModal] = useState(true);
     
     useEffect(() => {
-        if(initialData !== 'finished') {
-            if(!currentStep) {
-                setInitialStep(dispatch);
-                setSurveyInitialData(dispatch, initialData);
-            } else {
-                setNextStepKey(getNextStepKey(currentStep));
-                setPrevStepKey(getPrevStepKey(currentStep));
-                
-                setListWithActiveStep([...surveyStaps].map(item => {
-                    if (item.key === currentStep)
-                        return { ...item, active: true };
+        if(!currentStep) {
+            setInitialStep(dispatch);
+            setSurveyInitialData(dispatch, initialData);
+        } else {
+            setNextStepKey(getNextStepKey(currentStep));
+            setPrevStepKey(getPrevStepKey(currentStep));
             
-                    return { ...item };
-                }))
-            }
+            setListWithActiveStep([...surveyStaps].map(item => {
+                if (item.key === currentStep)
+                    return { ...item, active: true };
+        
+                return { ...item };
+            }))
         }
     }, [currentStep, initialData, dispatch]);
-    
+
     const onSaveFormData = (step, data) => {
         dispatch(updateFormData({step, data}))
     }

@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import Summary from '../../../src/components/survey-steps/Summary';
+import Summary from '../../../../src/components/survey-steps/Summary';
 import toJson from 'enzyme-to-json';
 
 describe('<Summary />', () => {

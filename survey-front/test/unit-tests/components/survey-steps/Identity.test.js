@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Identity from '../../../src/components/survey-steps/Identity';
+import Identity from '../../../../src/components/survey-steps/Identity';
 
 describe('<Identity />', () => {
     test('Should render correctly with inital value', () => {

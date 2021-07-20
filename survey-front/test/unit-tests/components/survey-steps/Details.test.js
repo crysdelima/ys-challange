@@ -1,6 +1,6 @@
 import { mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Details from '../../../src/components/survey-steps/Details';
+import Details from '../../../../src/components/survey-steps/Details';
 
 describe('<Details />', () => {
     test('Should render correctly with inital value', () => {

@@ -4,13 +4,15 @@ import { debounce, get } from 'lodash';
 import { Provider } from 'react-redux'
 import 'semantic-ui-css/semantic.min.css'
 
-import store from './redux/index'
+import startStore from './redux/index'
 
 import service from './service/SurveyService';
 
 import SurveyScreen from './containers/SurveyScreen';
 
 const ROOT_ELEMENT = 'survey-root';
+
+const store = startStore();
 
 debounce(() => {
     const initialData = service.getData();
