@@ -19,3 +19,11 @@ You can navigate to the `survey-front` folder, where are located the React app s
  - `/config` Some app static configs.
  - `/redux` React Redux config files. Each application logical separation have a `*Slice.js` file with redux settings. Usually, they are: initial state and actions to handle the state.
  - `/service` Functions to connect with service APIs. Usually, they are called by Redux actions or containers to do some CRUD operations with an API.
+
+### Data Store Service
+The app use the web browser localStorage to store the survey data, simulating the comunication with an API.
+
+### Test
+`unit-tests` This app makes use of Redux containers/components logic. That means the components have only the style rules, just receiving props and showing content using Sematic UI elements to build the view and they can be used by other containers. To get a consistent result, was developed unit tests to assure all changes on the components will be verified.
+
+`integrated` Containers can interact with Redux, API service, static configs and other data source to get the needed information to build the logic that will return components with apropriated props to build the desired screen. To assume that all data sources and logics are correctly working, was developed integrated tests for containers, assuring all needed interaction will be correact.
