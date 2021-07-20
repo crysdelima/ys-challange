@@ -1,4 +1,4 @@
-# YieldStreet code challange
+# YieldStreet code challenge
 
 This repo contains a Survey app build with ReactJS, Redux, Semantic UI and other usefull libs.
 
