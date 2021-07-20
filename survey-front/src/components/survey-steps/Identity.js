@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Form } from 'semantic-ui-react';
-import { debounce } from 'lodash';
+import { debounce, get } from 'lodash';
 import dataValidation from '../../config/data-validation';
 
 const onSaveWithDebounce = debounce((data, onSave) => (
@@ -16,8 +16,17 @@ const Identity = ({
     const [formData, setFormData] = useState({ ...initialData });
     const [wrongEmail, setWrongEmail] = useState(false);
     
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => onDisableNextStep(false), []);
+    useEffect(() => {
+        onDisableNextStep(false);
+        const email = get(formData, 'email', null);
+
+        if (email) {
+            const isValidEmail = dataValidation.isEmail(email);
+            setWrongEmail(!isValidEmail);
+            onDisableNextStep(!isValidEmail)
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     const onChange = e => {
         onSaveWithDebounce.cancel();
@@ -29,9 +38,9 @@ const Identity = ({
         setFormData(newFormData);
 
         if (name === 'email' && value) {
-            const isValidEmail = !dataValidation.isEmail(value);
-            setWrongEmail(isValidEmail);
-            onDisableNextStep(isValidEmail)
+            const isValidEmail = dataValidation.isEmail(value);
+            setWrongEmail(!isValidEmail);
+            onDisableNextStep(!isValidEmail)
         } else {
             setWrongEmail(false);
             onDisableNextStep(false)
