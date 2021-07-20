@@ -6,7 +6,7 @@ You can see this app running by cloning the repo and opening `example.html` in y
 
 ## The React App
 
-You can navigate to the `survey-front` folder, where are located the React app source files and run:
+You can navigate to the `survey-front` folder, where are located the React app source files and run (The app was built using `yarn` but you can use `npm` without problem.):
 
  - `yarn` to install dependencies
  - `yarn start` to run development server
