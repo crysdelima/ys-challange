@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { isEmpty } from 'lodash';
+import { Message } from 'semantic-ui-react';
 
 import { setCurrentStep } from '../redux/stepsSlice';
 import {
@@ -81,7 +82,11 @@ const SurveyScreen = ({ initialData }) => {
 
     if (!openModal) {
         return (
-            <p>Your survey was submitted.</p>
+            <Message
+                positive
+                icon='check'
+                header='Your survey was submitted.'
+            />
         )
     }
 

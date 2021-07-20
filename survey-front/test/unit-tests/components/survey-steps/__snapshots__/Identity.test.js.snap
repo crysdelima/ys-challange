@@ -74,20 +74,24 @@ exports[`<Identity /> Should render correctly with inital value 1`] = `
       <FormInput
         as={[Function]}
         control={[Function]}
+        error={false}
         id="survey-identity-field-email"
         label="Email"
         name="email"
         onChange={[Function]}
         placeholder="Type your email address here"
+        type="email"
         value="initial@mail.com"
       >
         <FormField
           control={[Function]}
+          error={false}
           id="survey-identity-field-email"
           label="Email"
           name="email"
           onChange={[Function]}
           placeholder="Type your email address here"
+          type="email"
           value="initial@mail.com"
         >
           <div
@@ -104,7 +108,7 @@ exports[`<Identity /> Should render correctly with inital value 1`] = `
               name="email"
               onChange={[Function]}
               placeholder="Type your email address here"
-              type="text"
+              type="email"
               value="initial@mail.com"
             >
               <div
@@ -116,7 +120,7 @@ exports[`<Identity /> Should render correctly with inital value 1`] = `
                   name="email"
                   onChange={[Function]}
                   placeholder="Type your email address here"
-                  type="text"
+                  type="email"
                   value="initial@mail.com"
                 />
               </div>

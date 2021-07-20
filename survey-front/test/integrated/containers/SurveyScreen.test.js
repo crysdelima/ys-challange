@@ -85,7 +85,7 @@ describe('<SurveyScreen />', () => {
             </Provider>
         );
         wrapper.find('Button').at(1).simulate('click')
-        expect(wrapper.find('p').text()).toEqual('Your survey was submitted.');
+        expect(wrapper.find('MessageHeader').prop('content')).toEqual('Your survey was submitted.');
     });
 
    

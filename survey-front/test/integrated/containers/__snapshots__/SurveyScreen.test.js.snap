@@ -191,7 +191,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                               id="survey-identity-field-email"
                               name="email"
                               placeholder="Type your email address here"
-                              type="text"
+                              type="email"
                               value=""
                             />
                           </div>
@@ -354,7 +354,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                 id="survey-identity-field-email"
                                 name="email"
                                 placeholder="Type your email address here"
-                                type="text"
+                                type="email"
                                 value=""
                               />
                             </div>
@@ -511,7 +511,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                 id="survey-identity-field-email"
                                 name="email"
                                 placeholder="Type your email address here"
-                                type="text"
+                                type="email"
                                 value=""
                               />
                             </div>
@@ -672,7 +672,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                   id="survey-identity-field-email"
                                   name="email"
                                   placeholder="Type your email address here"
-                                  type="text"
+                                  type="email"
                                   value=""
                                 />
                               </div>
@@ -835,7 +835,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                         id="survey-identity-field-email"
                                         name="email"
                                         placeholder="Type your email address here"
-                                        type="text"
+                                        type="email"
                                         value=""
                                       />
                                     </div>
@@ -992,7 +992,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                           id="survey-identity-field-email"
                                           name="email"
                                           placeholder="Type your email address here"
-                                          type="text"
+                                          type="email"
                                           value=""
                                         />
                                       </div>
@@ -1154,7 +1154,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                             id="survey-identity-field-email"
                                             name="email"
                                             placeholder="Type your email address here"
-                                            type="text"
+                                            type="email"
                                             value=""
                                           />
                                         </div>
@@ -1312,7 +1312,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                               id="survey-identity-field-email"
                                               name="email"
                                               placeholder="Type your email address here"
-                                              type="text"
+                                              type="email"
                                               value=""
                                             />
                                           </div>
@@ -1469,7 +1469,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                 id="survey-identity-field-email"
                                                 name="email"
                                                 placeholder="Type your email address here"
-                                                type="text"
+                                                type="email"
                                                 value=""
                                               />
                                             </div>
@@ -1625,7 +1625,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                   id="survey-identity-field-email"
                                                   name="email"
                                                   placeholder="Type your email address here"
-                                                  type="text"
+                                                  type="email"
                                                   value=""
                                                 />
                                               </div>
@@ -1777,7 +1777,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                     id="survey-identity-field-email"
                                                     name="email"
                                                     placeholder="Type your email address here"
-                                                    type="text"
+                                                    type="email"
                                                     value=""
                                                   />
                                                 </div>
@@ -2083,20 +2083,24 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                   <FormInput
                                                     as={[Function]}
                                                     control={[Function]}
+                                                    error={false}
                                                     id="survey-identity-field-email"
                                                     label="Email"
                                                     name="email"
                                                     onChange={[Function]}
                                                     placeholder="Type your email address here"
+                                                    type="email"
                                                     value=""
                                                   >
                                                     <FormField
                                                       control={[Function]}
+                                                      error={false}
                                                       id="survey-identity-field-email"
                                                       label="Email"
                                                       name="email"
                                                       onChange={[Function]}
                                                       placeholder="Type your email address here"
+                                                      type="email"
                                                       value=""
                                                     >
                                                       <div
@@ -2113,7 +2117,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                           name="email"
                                                           onChange={[Function]}
                                                           placeholder="Type your email address here"
-                                                          type="text"
+                                                          type="email"
                                                           value=""
                                                         >
                                                           <div
@@ -2125,7 +2129,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                                               name="email"
                                                               onChange={[Function]}
                                                               placeholder="Type your email address here"
-                                                              type="text"
+                                                              type="email"
                                                               value=""
                                                             />
                                                           </div>
@@ -2351,7 +2355,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                 id="survey-identity-field-email"
                                 name="email"
                                 placeholder="Type your email address here"
-                                type="text"
+                                type="email"
                                 value=""
                               />
                             </div>
@@ -2511,7 +2515,7 @@ exports[`<SurveyScreen /> Render correctly 1`] = `
                                 id="survey-identity-field-email"
                                 name="email"
                                 placeholder="Type your email address here"
-                                type="text"
+                                type="email"
                                 value=""
                               />
                             </div>

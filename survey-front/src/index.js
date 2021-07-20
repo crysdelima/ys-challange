@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { debounce, get } from 'lodash';
-import { Provider } from 'react-redux'
-import 'semantic-ui-css/semantic.min.css'
+import { Provider } from 'react-redux';
+import 'semantic-ui-css/semantic.min.css';
+import { Message } from 'semantic-ui-react'
 
 import startStore from './redux/index'
 
@@ -18,7 +19,10 @@ debounce(() => {
     const initialData = service.getData();
     const surveyStatus = get(initialData, 'status', null)
     const app = surveyStatus === 'finished' ? (
-        <p>You have completed the survey</p>
+        <Message
+            info
+            content='You have completed the survey.'
+        />
     ) : (
         <Provider store={store}>
             <SurveyScreen initialData={initialData} />
